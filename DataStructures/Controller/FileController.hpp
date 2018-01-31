@@ -9,10 +9,9 @@
 #ifndef FileController_hpp
 #define FileController_hpp
 
-#include <stdio.h>
 #include "../Data/CrimeData.hpp"
 #include <string>
-#include <fstream>
+#include <fstream>  //handles files
 #include <iostream>
 #include <vector>
 #include <sstream>
