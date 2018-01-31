@@ -21,7 +21,7 @@ public:
     void stopTimer();
     void resetTimer();
     void displayInformation();
-    void getTimeInMicoseconds();
+    long getTimeInMicroseconds();
     
     
 private:
