@@ -13,16 +13,20 @@ using namespace std;
 void Controller :: start()
 {
     Timer codeTimer;
+    //codeTimer.startTimer();
+    //cout << "Look code on the screen" << endl;
+    //codeTimer.stopTimer();
+    //codeTimer.displayInformation();
+    //codeTimer.resetTimer();
     codeTimer.startTimer();
-    cout << "Look code on the screen" << endl;
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    codeTimer.resetTimer();
-    codeTimer.startTimer();
-    for (int index = 0; index < 50000; index++)
+    
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/dsch3401/C++/DataStructures/DataStructures/Data/crime.csv");
+    
+    for(int index = 200; index < 216; index++)
     {
-        cout << "Index is " << index << "\t";
+        cout << index << " is " << myData[index] << endl;
     }
+    
     codeTimer.stopTimer();
     codeTimer.displayInformation();
 }
