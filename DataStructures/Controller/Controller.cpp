@@ -57,6 +57,6 @@ void Controller :: findMaxAndMin()
     
     searchTimer.stopTimer();
     cout << "The smallest Crime stat is at " << minIndex << " and it is: " << myData[minIndex] << endl;
-    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[minIndex] << endl;
+    cout << "The largest Crime stat is at " << maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
 }
