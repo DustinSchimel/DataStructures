@@ -35,10 +35,10 @@ public:
     Type operator [] (int index) const;
     
     //Methods
-    int getSize();
+    int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
