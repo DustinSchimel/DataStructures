@@ -42,6 +42,7 @@
 		79277AAF20225633005DBA42 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		79981F27202A339C008BB087 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		79981F28202A339C008BB087 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		79981F2C202A4188008BB087 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		792202152024ED5B0043E15B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				79981F2A202A4170008BB087 /* Nodes */,
 				792202162024EDCC0043E15B /* Structures */,
 			);
 			path = Model;
@@ -137,6 +139,14 @@
 				79981F28202A339C008BB087 /* ArrayTester.hpp */,
 			);
 			path = Testers;
+			sourceTree = "<group>";
+		};
+		79981F2A202A4170008BB087 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				79981F2C202A4188008BB087 /* Node.hpp */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

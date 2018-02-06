@@ -30,9 +30,13 @@ void Controller :: start()
     //codeTimer.stopTimer();
     //codeTimer.displayInformation();
     
-    findMaxAndMin();
+    //findMaxAndMin();
     
-    testArray();
+    //testArray();
+    
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
 }
 
 void Controller :: findMaxAndMin()
