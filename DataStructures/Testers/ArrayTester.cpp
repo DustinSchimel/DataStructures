@@ -35,4 +35,31 @@ void ArrayTester :: testArrayUse()
     
     thirdArray[5] = 123;
     cout << thirdArray[5] << endl;
+
+    //Testing
+    
+    Array<double> myFirstArray(100);
+    
+    Array<double> mySecondArray(myFirstArray);
+    
+    for (double index = 0; index < myFirstArray.getSize(); index++)
+    {
+        myFirstArray[index] = index;
+    }
+    
+    mySecondArray = myFirstArray;
+    
+    cout << "My favorite number is " << mySecondArray.getFromIndex(5) << endl;
+    
+    mySecondArray.setAtIndex(5, 99);
+    
+    cout << "Now the number is " << mySecondArray.getFromIndex(5) << "in the second array" << endl;
+    
+    cout << "But the number is still " << myFirstArray.getFromIndex(5) << " in the first array" << endl;
+    
+}
+
+void ArrayTester:: testAdvancedArray()
+{
+    
 }
