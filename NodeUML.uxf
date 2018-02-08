@@ -54,4 +54,37 @@
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>230</y>
+      <w>300</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>/List&lt;Type&gt;/
+--
+
+#size : int
+
+--
++ add(Type) : void
++ addAtIndex(int, Type) : void
++ getFromIndex(int) : Type
++ remove(int) : Type
++ getFront() : LinearNode&lt;Type&gt; *
++ getEnd() : LinearNode&lt;Type&gt; *</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>310</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
 </diagram>
