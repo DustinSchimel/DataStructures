@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		790ABDB3202CD91B0017FA4F /* NodeUML.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NodeUML.uxf; sourceTree = SOURCE_ROOT; };
+		790ABDB5202CE2D20017FA4F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		792202192024EEFD0043E15B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		79277A8D20224340005DBA42 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		79277A9720224404005DBA42 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				792202192024EEFD0043E15B /* Array.hpp */,
+				790ABDB5202CE2D20017FA4F /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
