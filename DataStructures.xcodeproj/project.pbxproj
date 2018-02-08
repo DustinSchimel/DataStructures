@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		790ABDB3202CD91B0017FA4F /* NodeUML.uxf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NodeUML.uxf; sourceTree = SOURCE_ROOT; };
 		792202192024EEFD0043E15B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		79277A8D20224340005DBA42 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		79277A9720224404005DBA42 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		79277A8F20224340005DBA42 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				790ABDB3202CD91B0017FA4F /* NodeUML.uxf */,
 				79981F26202A3387008BB087 /* Testers */,
 				792202152024ED5B0043E15B /* Model */,
 				79277AA42022515F005DBA42 /* Data */,
