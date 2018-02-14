@@ -6,18 +6,17 @@
 //  Copyright © 2018 Schimel, Dustin. All rights reserved.
 //
 
+#ifndef LinkedList_hpp
+#define LinkedList_hpp
+
 #include "List.hpp"
 
 using namespace std: //Used for keyword access. Use this to make sure your pointers are pointing to the right things
-
-#ifndef LinkedList_hpp  //May have to move these up
-#define LinkedList_hpp
 
 template <class Type>
 class LinkedList : public List<Type>
 {
 protected:
-    
     LinearNode<Type> * front;
     LinearNode<Type> * end;
     
@@ -38,7 +37,7 @@ public:
     Type remove(int index);
 //      Type setAtIndex(int index, Type item);
 //      bool contains(Type item);
-}
+};
 
 LinkedList<Type> :: LinkedList()
 {
