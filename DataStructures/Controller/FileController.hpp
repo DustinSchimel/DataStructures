@@ -25,7 +25,7 @@ public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
 };
 
-static LinkedList<CrimeData> readDataToList(string filename);
+static LinkedList<CrimeData> readDataToList(string filename);   //idk what this is
 
 LinkedList<CrimeData> FileController :: readDataToList(stirng fileName)
 {
