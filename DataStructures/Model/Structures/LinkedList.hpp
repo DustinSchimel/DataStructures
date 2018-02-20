@@ -11,7 +11,7 @@
 
 #include "List.hpp"
 
-using namespace std: //Used for keyword access. Use this to make sure your pointers are pointing to the right things
+using namespace std; //Used for keyword access. Use this to make sure your pointers are pointing to the right things
 
 template <class Type>
 class LinkedList : public List<Type>
@@ -53,9 +53,9 @@ LinkedList<Type> :: ~LinkedList()
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
     {
-        front = destoryStructure->getNextNode();
-        delete destoryStructure;
-        destoryStructure = front;
+        front = destroyStructure->getNextNode();
+        delete destroyStructure;
+        destroyStructure = front;
     }
 }
 
@@ -168,7 +168,7 @@ Type LinkedList<Type> :: remove(int index)
     this->size -= 1;
     
     removedData = toBeRemoved->getData();
-    delete toBeremoved;
+    delete toBeRemoved;
     return removedData;
 }
 

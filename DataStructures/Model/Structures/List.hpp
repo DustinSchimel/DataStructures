@@ -10,8 +10,9 @@
 #define List_hpp
 
 #include <assert.h>
-#include "../../Nodes/LinearNode.hpp"
+#include "LinearNode.hpp"
 
+template <class Type>
 class List
 {
 protected:
