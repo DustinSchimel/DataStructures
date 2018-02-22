@@ -20,7 +20,7 @@ void Controller :: start()
     //codeTimer.resetTimer();
     //codeTimer.startTimer();
     
-    //vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/dsch3401/C++/DataStructures/DataStructures/Data/crime.csv");
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/dsch3401/C++/DataStructures/DataStructures/Data/crime.csv");
     
     //for(int index = 200; index < 216; index++)
     //{
@@ -40,6 +40,18 @@ void Controller :: start()
     LinkedListTester myList;
     
     myList.testListBasics();
+    
+    cout << endl << endl;
+    
+    LinkedListTester myCrimeList;
+    
+    myCrimeList.testListWithData();
+    
+    cout << endl << endl;
+    
+    LinkedListTester myStringList;
+    
+    myStringList.testPersonalDataStrings();
 }
 
 void Controller :: findMaxAndMin()
