@@ -10,20 +10,52 @@
 
 int RecursionTester :: fib(int number)
 {
-    return 0;
+    if ( number == 0 || number == 1 )
+    {
+        cout << "Reached a base case" << endl;
+        return 1;
+    }
+    else
+    {
+        cout << "Reached a recursive case with: " << number - 1 << " and " << number - 2 << endl;
+        return fib (number - 1) + fib (number - 2);
+    }
 }
 
 string RecursionTester :: mystery(string word)
 {
-    return "";
+    if (word.length() == 2)
+    {
+        return word;
+    }
+    else
+    {
+        return word + mystery(word.substr(0, word.length() -2));
+    }
+    
+    //if (word.length() == 1)
+    //{
+    //    return word;
+    //}
+    //else
+    //{
+    //    return word + mystery(word.substr(0, word.length() -1));
+    //}
 }
 
 void RecursionTester :: testRecursionNumbers()
 {
-    
+    Timer recursionTimer;
+    cout << "Testing fibonacci with 13" << endl;
+    recursionTimer.startTimer();
+    cout << fib(13) << endl;
+    recursionTimer.stopTimer();
+    recursionTimer.displayInformation();
 }
 
 void RecursionTester :: testRecursionString()
 {
-    
+    cout << mystery("XO") << endl;
+    cout << mystery("Boop") << endl;
+    cout << mystery("Doooop") << endl;
 }
