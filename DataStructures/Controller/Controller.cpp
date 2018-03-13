@@ -53,9 +53,14 @@ void Controller :: start()
     
     //myStringList.testPersonalDataStrings();
     
-    RecursionTester test;
-    test.testRecursionNumbers();
-    test.testRecursionString();
+    //RecursionTester test;
+    //test.testRecursionNumbers();
+    //test.testRecursionString();
+    
+    TestingStacksAndQueues test;
+    test.stackVersusList();
+    test.stackVersusQueue();
+    test.queueVersusList();
 }
 
 void Controller :: findMaxAndMin()

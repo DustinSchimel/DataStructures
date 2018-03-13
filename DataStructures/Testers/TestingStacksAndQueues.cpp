@@ -20,7 +20,7 @@ void TestingStacksAndQueues :: stackVersusList()
         numberList.add(index);
     }
     
-    cout << "get the third from the list item from the structure" << endl;
+    cout << "Get the third from the list item from the structure" << endl;
     
     int index = 0;
     int value = -99;
@@ -37,6 +37,9 @@ void TestingStacksAndQueues :: stackVersusList()
     index = 0;
     listTimer.startTimer();
     value = numberList.getFromIndex(7);
+    listTimer.stopTimer();
+    cout << "The time it took to work with Stack" << endl;
+    stackTimer.displayInformation();
     cout << "The time it took to work with List" << endl;
     listTimer.displayInformation();
     
@@ -64,7 +67,7 @@ void TestingStacksAndQueues :: stackVersusList()
 
 void TestingStacksAndQueues :: stackVersusQueue()
 {
-    vector<CrimeData> data = FileController :: readCrimeDataToVector("path to file");
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/dsch3401/C++/DataStructures/DataStructures/Data/crime.csv");
     
     Stack<CrimeData> crimeStack;
     Queue<CrimeData> crimeQueue;
