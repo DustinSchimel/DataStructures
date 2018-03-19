@@ -46,6 +46,7 @@
 		79277AAC20225627005DBA42 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		79277AAD2022562E005DBA42 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		79277AAF20225633005DBA42 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
+		795108A72060362600A9EA53 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		79981F27202A339C008BB087 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		79981F28202A339C008BB087 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		79981F2C202A4188008BB087 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		792202162024EDCC0043E15B /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				795108A52060360600A9EA53 /* NonLinear */,
 				79A7CA72203F499500434C01 /* Linear */,
 			);
 			path = Structures;
@@ -148,6 +150,14 @@
 				79277AAC20225627005DBA42 /* crime.csv */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		795108A52060360600A9EA53 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+				795108A72060362600A9EA53 /* Graph.hpp */,
+			);
+			path = NonLinear;
 			sourceTree = "<group>";
 		};
 		79981F26202A3387008BB087 /* Testers */ = {
