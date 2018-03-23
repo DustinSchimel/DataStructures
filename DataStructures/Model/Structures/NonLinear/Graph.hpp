@@ -23,7 +23,7 @@ private:
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
-    int vertextCount;
+    int vertexCount;
     void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
 public:
     Graph();
@@ -43,6 +43,7 @@ public:
     //Accessors
     Type& operator [] (int vertex);
     Type operator [] (int vertex) const;
+    int size() const;
     
     //Check connections
     bool hasUndirectedConnection(int source, int target) const;
@@ -97,7 +98,7 @@ Type Graph<Type> :: operator[](int vertex) const
 template <class Type>
 void Graph<Type> :: addVertex(const Type& value)
 {
-    assert(vertexCount < MAXIMUM)
+    assert(vertexCount < MAXIMUM);
     int newVertexNumber = vertexCount;
     vertexCount++;
     
@@ -122,8 +123,8 @@ template <class Type>
 void Graph<Type> :: removeEdgeUndirected(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >= target < vertexCount);
-    adjacency[source][target] = false;
-    adjacency[target][source] = false;
+    adjacencyMatrix[source][target] = false;
+    adjacencyMatrix[target][source] = false;
 }
 
 template <class Type>
@@ -198,7 +199,7 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
-    bool visitedVerticles[MAXIMUM];
+    bool visitedVertices[MAXIMUM];
     assert(vertex < currentGraph.size());
     std::fill_n(visitedVertices, currentGraph.size(), false);
     depthFirstTraversal(currentGraph, vertex, visitedVertices);

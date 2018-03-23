@@ -57,10 +57,14 @@ void Controller :: start()
     //test.testRecursionNumbers();
     //test.testRecursionString();
     
-    TestingStacksAndQueues test;
-    test.stackVersusList();
-    test.stackVersusQueue();
-    test.queueVersusList();
+    //TestingStacksAndQueues test;
+    //test.stackVersusList();
+    //test.stackVersusQueue();
+    //test.queueVersusList();
+    
+    GraphTester puzzle;
+    puzzle.testGraph();
+    
 }
 
 void Controller :: findMaxAndMin()
