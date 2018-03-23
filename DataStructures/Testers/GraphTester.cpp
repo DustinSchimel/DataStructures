@@ -106,6 +106,7 @@ void GraphTester :: setup()
 
 void GraphTester :: compareTraversals()
 {
+    /*
     cout << "Depth First Traversal: Quote" << endl;
     puzzle.depthFirstTraversal(puzzle, 33);  //33 gives full will.i.am quote
     
@@ -117,6 +118,31 @@ void GraphTester :: compareTraversals()
     
     cout << endl << "Breadth First Traversal: Author" << endl;
     puzzle.breadthFirstTraversal(puzzle, 12);   //12 gives megan smith
+    */
+}
+
+void GraphTester :: findCheapestTraversal()
+{
+    int maxIndex = 0;
+    int minIndex = 0;
+    
+    for (int index = 1; index < puzzle.size(); index++)
+    {
+        if (puzzle.costTraversal(puzzle, minIndex) > puzzle.costTraversal(puzzle, index))
+        {
+            minIndex = index;
+        }
+        
+        else if (puzzle.costTraversal(puzzle, maxIndex) < puzzle.costTraversal(puzzle, index))
+        {
+            maxIndex = index;
+        }
+    }
+    
+    cout << "The most expensive traversal of puzzle is at vertex: " << maxIndex << endl;
+    cout << "With a cost of: " << puzzle.costTraversal(puzzle, maxIndex) << endl;
+    cout << "The least expensive traversal of puzzle is at vertex: " << minIndex << endl;
+    cout << "With a cost of: " << puzzle.costTraversal(puzzle, minIndex) << endl;
     
 }
 
@@ -124,4 +150,5 @@ void GraphTester :: testGraph()
 {
     setup();
     compareTraversals();
+    findCheapestTraversal();
 }
