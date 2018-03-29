@@ -19,7 +19,7 @@ protected:
 public:
     //Informational Methods
     virtual int getSize() = 0;
-    virtual int getheight() = 0;
+    virtual int getHeight() = 0;
     virtual bool isComplete() = 0;
     virtual bool isBalanced() = 0;
     //*Data Methods*
@@ -27,7 +27,7 @@ public:
     virtual void contains(Type data) = 0;
     virtual void remove(Type data) = 0;
     //*Traversals*
-    virtual void inOrderTraversals() = 0;
+    virtual void inOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
     virtual void postOrderTraversal() = 0;
 };
