@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		790ABDB5202CE2D20017FA4F /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		791027F3206D608D00561463 /* BinarySearchTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BinarySearchTree.hpp; sourceTree = "<group>"; };
 		791B11DB203CBDA50044A5C7 /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		792202192024EEFD0043E15B /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		79277A8D20224340005DBA42 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +164,7 @@
 			children = (
 				795108A72060362600A9EA53 /* Graph.hpp */,
 				79F367CE206AD40200A4BFF2 /* Tree.hpp */,
+				791027F3206D608D00561463 /* BinarySearchTree.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
