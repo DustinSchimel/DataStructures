@@ -24,7 +24,7 @@ public:
     virtual bool isBalanced() = 0;
     //*Data Methods*
     virtual void insert(Type data) = 0;
-    virtual void contains(Type data) = 0;
+    virtual bool contains(Type data) = 0;
     virtual void remove(Type data) = 0;
     //*Traversals*
     virtual void inOrderTraversal() = 0;

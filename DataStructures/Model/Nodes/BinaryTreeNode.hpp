@@ -25,12 +25,12 @@ public:
     
     //Methods
     void setRootNode(BinaryTreeNode<Type> * root);
-    void setLeftNode(BinaryTreeNode<Type> * left);
     void setRightNode(BinaryTreeNode<Type> * right);
+    void setLeftNode(BinaryTreeNode<Type> * left);
     
-    BinaryTreeNode<Type> * getRoot();
-    BinaryTreeNode<Type> * getLeft();
-    BinaryTreeNode<Type> * getRight();
+    BinaryTreeNode<Type> * getRootNode();
+    BinaryTreeNode<Type> * getLeftNode();
+    BinaryTreeNode<Type> * getRightNode();
 };
 
 //Constructors
@@ -52,40 +52,40 @@ BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 
 //Accessor methods
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRoot()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
 {
     return this->root;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRight()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
 {
     return this->right;
 }
 
 template <class Type>
-BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeft()
+BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
 {
     return this->left;
 }
 
 
 template <class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * root )
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
 {
-    this->root = root;
+    root = newRoot;
 }
 
 template <class Type>
-void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left )
-{
-    this->left = left;
-}
-
-template <class Type>
-void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right )
+void BinaryTreeNode<Type> :: setRightNode(BinaryTreeNode<Type> * right)
 {
     this->right = right;
+}
+
+template <class Type>
+void BinaryTreeNode<Type> :: setLeftNode(BinaryTreeNode<Type> * left)
+{
+    this->left = left;
 }
 
 #endif /* BinaryTreeNode_hpp */
