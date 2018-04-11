@@ -8,24 +8,36 @@
 
 #include "BinaryTreeTester.hpp"
 
-/*
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(3);
-    testTree.insert(1);
-    testTree.insert(2);
-    testTree.insert(-3246000);
-    testTree.insert(-12);
-    testTree.insert(7);
-    testTree.insert(5);
-    testTree.insert(6);
-    testTree.insert(8);
-    testTree.insert(5000);
-    testTree.insert(9001);
-    testTree.insert(10);
-    testTree.insert(600);
+    testIntTree.insert(3);
+    testIntTree.insert(1);
+    testIntTree.insert(2);
+    testIntTree.insert(-3246000);
+    testIntTree.insert(-12);
+    testIntTree.insert(7);
+    testIntTree.insert(5);
+    testIntTree.insert(6);
+    testIntTree.insert(8);
+    testIntTree.insert(5000);
+    testIntTree.insert(9001);
+    testIntTree.insert(10);
+    testIntTree.insert(600);
+    
+    testStringTree.insert(" I ");
+    testStringTree.insert(" Don't ");
+    testStringTree.insert(" Know ");
+    testStringTree.insert(" What ");
+    testStringTree.insert(" I'm ");
+    testStringTree.insert(" Doing ");
+    testStringTree.insert(" Right ");
+    testStringTree.insert(" Now ");
+    testStringTree.insert(" At ");
+    testStringTree.insert(" This ");
+    testStringTree.insert(" Very ");
+    testStringTree.insert(" Momemt ");
     
     
-    testTree.inOrderTraversal();
+    testIntTree.inOrderTraversal();
+    testStringTree.inOrderTraversal();
 }
-*/

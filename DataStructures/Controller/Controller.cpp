@@ -62,8 +62,11 @@ void Controller :: start()
     //test.stackVersusQueue();
     //test.queueVersusList();
     
-    GraphTester puzzle;
-    puzzle.testGraph();
+    //GraphTester puzzle;
+    //puzzle.testGraph();
+    
+    BinaryTreeTester test;
+    test.doTreeStuff();
     
 }
 
