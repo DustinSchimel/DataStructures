@@ -37,7 +37,15 @@ void BinaryTreeTester :: doTreeStuff()
     testStringTree.insert(" Very ");
     testStringTree.insert(" Momemt ");
     
+    cout << "Pre Order Traversal" << endl;
+    testIntTree.preOrderTraversal();
+    testStringTree.preOrderTraversal();
     
+    cout << "In Order Traversal" << endl;
     testIntTree.inOrderTraversal();
     testStringTree.inOrderTraversal();
+    
+    cout << "Post Order Traversal" << endl;
+    testIntTree.postOrderTraversal();
+    testStringTree.postOrderTraversal();
 }

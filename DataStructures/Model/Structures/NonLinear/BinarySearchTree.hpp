@@ -143,10 +143,20 @@ void BinarySearchTree<Type> :: preOrderTraversal()
     preOrderTraversal(this->root);
 }
 
+/*
+ Pre order traversal goes in the order Root, Left, Right
+ Great for building math problems
+ Notice that the non-recursive case does NOTHING
+*/
 template <class Type>
-void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * preStart)
+void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
 {
-    
+    if (currentNode != nullptr)
+    {
+        cout << currentNode->getData() << endl;
+        preOrderTraversal(currentNode->getLeftNode());
+        preOrderTraversal(currentNode->getRightNode());
+    }
 }
 
 template <class Type>
@@ -155,10 +165,20 @@ void BinarySearchTree<Type> :: postOrderTraversal()
     postOrderTraversal(this->root);
 }
 
+/*
+ Post order traversal goes in the order Left, Right, Root
+ Great for destorying the tree
+ Notice that the non-recursive case does NOTHING
+*/
 template <class Type>
-void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postStart)
+void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
 {
-    
+    if (currentNode != nullptr)
+    {
+        postOrderTraversal(currentNode->getLeftNode());
+        postOrderTraversal(currentNode->getRightNode());
+        cout << currentNode->getData() << endl;
+    }
 }
 
 template <class Type>
