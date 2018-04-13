@@ -24,28 +24,33 @@ void BinaryTreeTester :: doTreeStuff()
     testIntTree.insert(10);
     testIntTree.insert(600);
     
-    testStringTree.insert(" I ");
-    testStringTree.insert(" Don't ");
-    testStringTree.insert(" Know ");
-    testStringTree.insert(" What ");
-    testStringTree.insert(" I'm ");
-    testStringTree.insert(" Doing ");
-    testStringTree.insert(" Right ");
-    testStringTree.insert(" Now ");
-    testStringTree.insert(" At ");
-    testStringTree.insert(" This ");
-    testStringTree.insert(" Very ");
-    testStringTree.insert(" Momemt ");
+    testStringTree.insert("I");
+    testStringTree.insert("Don't");
+    testStringTree.insert("Know");
+    testStringTree.insert("What");
+    testStringTree.insert("I'm");
+    testStringTree.insert("Doing");
+    testStringTree.insert("Right");
+    testStringTree.insert("Now");
+    testStringTree.insert("At");
+    testStringTree.insert("This");
+    testStringTree.insert("Very");
+    testStringTree.insert("Momemt");
     
     cout << "Pre Order Traversal" << endl;
     testIntTree.preOrderTraversal();
+    cout << endl;
     testStringTree.preOrderTraversal();
+    cout << endl;
     
     cout << "In Order Traversal" << endl;
     testIntTree.inOrderTraversal();
+    cout << endl;
     testStringTree.inOrderTraversal();
+    cout << endl;
     
     cout << "Post Order Traversal" << endl;
     testIntTree.postOrderTraversal();
+    cout << endl;
     testStringTree.postOrderTraversal();
 }
