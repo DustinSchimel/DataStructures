@@ -12,17 +12,17 @@ void BinaryTreeTester :: doTreeStuff()
 {
     testIntTree.insert(3);
     testIntTree.insert(1);
-    testIntTree.insert(2);
+    testIntTree.insert(2999999);
     testIntTree.insert(-3246000);
     testIntTree.insert(-12);
     testIntTree.insert(7);
     testIntTree.insert(5);
-    testIntTree.insert(6);
-    testIntTree.insert(8);
+    testIntTree.insert(0);
+    testIntTree.insert(867867867);
     testIntTree.insert(5000);
     testIntTree.insert(9001);
     testIntTree.insert(10);
-    testIntTree.insert(600);
+    testIntTree.insert(60350);
     
     testStringTree.insert("I");
     testStringTree.insert("Don't");
