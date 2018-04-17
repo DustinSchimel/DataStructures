@@ -92,7 +92,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: leftRightRotation (BinaryTreeNode<Type> 
     BinaryTreeNode<Type> * changedNode;
     changedNode = parent->getLeftNode();
     
-    parent->setLeftChild(rightRotation(changeNode));
+    parent->setLeftChild(rightRotation(changedNode));
     
     return leftRotation(parent);
 }
@@ -169,7 +169,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent
         {
             BinaryTreeNode<Type> * leftMost = this->getLeftMostChild(parent->getRightNode());
             parent->setNodeData(leftMost->getNodeData());
-            parent->setRightChild(removeNode(parent->getRightNode(), leftMost->getNodeData());
+            parent->setRightChild(removeNode(parent->getRightNode(), leftMost->getNodeData()));
         }
     }
 
