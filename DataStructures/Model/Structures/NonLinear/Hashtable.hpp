@@ -24,7 +24,7 @@ private:
     bool isPrime(long current);
     void resize();
     long findPosition(HashNode<Type> * insertedNode);
-    long handleCollision(HashNode<Type> * insertedNode, long index);
+    long handleCollision(long currentPosition);
     
 public:
     Hashtable();
@@ -58,31 +58,75 @@ Hashtable<Type> :: isPrime(long current)
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
-    return -1;
+    long insertPosition = insert->getKey() % this->capacity;
+    return insertPosition;
 }
 
 template <class Type>
-long Hashtable<Type> :: handleCollision(HashNode<Type> * current, long index)
+long Hashtable<Type> :: handleCollision(long currentPosition)
 {
-    return -1;
+    long shift = 17;
+    
+    for (long position = currentPosition + shift; position != currentPosition; position += shift)
+    {
+        if (position >= capacity)
+        {
+            position = position & capacity;
+        }
+        
+        if (internalStorage[position] == nullptr)
+        {
+            return position;
+        }
+    }
 }
 
 template <class Type>
 long Hashtabl<Type> :: getSize()
 {
-    return -1;
+    return this->size;
 }
 
 template <class Type>
 long Hashtable<Type> :: getNextPrime()
 {
-    return -1;
+    return 0;
 }
 
 template <class Type>
 void Hashtable<Type> :: resize()
 {
+    long updatedCapacity = getNextPrime();
+    HashNode<Type> * * tempStorage = new HashNode<Type> * [updatedCapacity];
     
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
+    
+    long oldCapacity = this->capacity;
+    this->capacity = updatedCapacity;
+    
+    for (long index = 0; index < oldCapacity; index++)
+    {
+        if (internalStorage[index] != nullptr)
+        {
+            HashNode<Type> * temp = internalStorage[index];
+            
+            long position = findPosition(temp);
+            if (tempStorage[position] == nullptr)
+            {
+                tempStorage[position] = temp;
+            }
+            else
+            {
+                long updatedPosition = handleCollision(position);
+                if (updatedPosition != -1)
+                {
+                    tempStorage[updatedPosition] = temp;
+                }
+            }
+        }
+    }
+    
+    internalStorage = tempStorage;
 }
 
 template <class Type>
