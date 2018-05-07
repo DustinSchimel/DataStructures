@@ -10,6 +10,8 @@
 #define Hashtable_hpp
 
 #include "../Nodes/HashNode.hpp"
+#include <cmath>
+#include <assert.h>
 
 template <class Type>
 class Hashtable
@@ -32,6 +34,8 @@ public:
     
     void insert(Type data);
     long getSize();
+    HashNode<Type> * get(long index);
+    bool contains(HashNode<Type> * value)
 };
 
 template <class Type>
@@ -183,4 +187,29 @@ void Hashtable<Type> :: insert(Type value)
         }
     }
 }
+
+template <class Type>
+HashNode<Type> * Hashtable<Type> :: get(long index)
+{
+    assert(index < capacity);
+    return internalStorage[index];
+}
+
+template <class Type>
+bool Hashtable<Type> :: contains(HashNode<Type> * value)
+{
+    if (internalStorage[findPosition(value)]->getData() == value->getData())
+    {
+        return true;
+    }
+    
+    long other = handleCollision(findPosition(value));
+    if (internalStorage[other]->getData() == value->getData())
+    {
+        return true;
+    }
+    
+    return false;
+}
+
 #endif /* Hashtable_hpp */
