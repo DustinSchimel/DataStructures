@@ -133,7 +133,7 @@ void GraphTester :: findCheapestTraversal()
             minIndex = index;
         }
         
-        else if (puzzle.costTraversal(puzzle, maxIndex) < puzzle.costTraversal(puzzle, index))
+        if (puzzle.costTraversal(puzzle, maxIndex) < puzzle.costTraversal(puzzle, index))
         {
             maxIndex = index;
         }
@@ -141,9 +141,12 @@ void GraphTester :: findCheapestTraversal()
     
     cout << "The most expensive traversal of puzzle is at vertex: " << maxIndex << endl;
     cout << "With a cost of: " << puzzle.costTraversal(puzzle, maxIndex) << endl;
-    cout << "The least expensive traversal of puzzle is at vertex: " << minIndex << endl;
+    cout << "The resulting text is: " << endl;
+    puzzle.breadthFirstTraversal(puzzle, maxIndex);
+    cout << endl << "The least expensive traversal of puzzle is at vertex: " << minIndex << endl;
     cout << "With a cost of: " << puzzle.costTraversal(puzzle, minIndex) << endl;
-    
+    cout << "The resulting text is: " << endl;
+    puzzle.breadthFirstTraversal(puzzle, minIndex);
 }
 
 void GraphTester :: testGraph()
